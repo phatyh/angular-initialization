@@ -1,0 +1,5 @@
+<router-outlet></router-outlet>
+
+<ng-container *ngIf="update">
+  <p>Güncelleme var. <button (click)="reloadPage()">Yükle</button></p>
+</ng-container>
