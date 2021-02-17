@@ -11,13 +11,12 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class AuthService {
-  // userToken: string;
   tokenName: string = '_token';
   decodedToken: any;
 
   constructor(
     private router: Router,
-    public jwtHelper: JwtHelperService,
+    private jwtHelper: JwtHelperService,
   ) { }
 
   get token(): string {

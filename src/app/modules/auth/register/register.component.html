@@ -1,1 +1,39 @@
-<p>register works!</p>
+<form class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+    <hr>
+    <div class="form-group">
+        <label for="exampleInputEmail">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFirstName">First Name</label>
+        <input type="text" class="form-control" id="exampleInputFirstName" aria-describedby="firstNameHelp">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputLastName">Last Name</label>
+        <input type="text" class="form-control" id="exampleInputLastName" aria-describedby="lastNameHelp">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPasswordVerify">Password Verfiy</label>
+        <input type="password" class="form-control" id="exampleInputPasswordVerify">
+    </div>
+    <div class="form-group">
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch">
+            <label class="custom-control-label" for="customSwitch">Accept Policy</label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div class="container mt-5">
+    <div class="list-group">
+        <a [routerLink]="['/', 'auth', 'login']" class="list-group-item list-group-item-action">Login</a>
+        <a [routerLink]="['/', 'auth', 'reset']" class="list-group-item list-group-item-action">Reset Password</a>
+    </div>
+</div>

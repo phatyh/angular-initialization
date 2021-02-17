@@ -1,20 +1,21 @@
 export interface IUserLogin {
-  username: string;
+  email: string;
   password: string;
   remember: boolean;
 }
 
 export interface IUserRegister {
-  username: string;
+  email: string;
   password: string;
   password_verify: string;
   firstName: string;
   lastName: string;
+  acceptPolicy: boolean;
 }
 
 export interface IUserData {
   id: number;
-  username: string;
+  email: string;
   firstName: string;
   lastName: string;
 }
