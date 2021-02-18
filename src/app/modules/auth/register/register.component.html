@@ -28,12 +28,11 @@
             <label class="custom-control-label" for="customSwitch">Accept Policy</label>
         </div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <button type="submit" class="btn btn-primary">Register</button>
 
-<div class="container mt-5">
-    <div class="list-group">
-        <a [routerLink]="['/', 'auth', 'login']" class="list-group-item list-group-item-action">Login</a>
-        <a [routerLink]="['/', 'auth', 'reset']" class="list-group-item list-group-item-action">Reset Password</a>
+    <div class="mt-5">
+        <a [routerLink]="['/']" class="btn btn-primary mr-1">Home</a>
+        <a [routerLink]="['/', 'auth', 'login']" class="btn btn-primary mr-1">Login</a>
+        <a [routerLink]="['/', 'auth', 'reset']" class="btn btn-primary mr-1">Reset Password</a>
     </div>
-</div>
+</form>

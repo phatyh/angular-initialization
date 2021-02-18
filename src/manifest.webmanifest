@@ -1,11 +1,11 @@
 {
-  "name": "angular-initialization",
-  "short_name": "angular-initialization",
-  "theme_color": "#1976d2",
+  "name": "Application Initialization",
+  "short_name": "App Init",
+  "theme_color": "#ff6c0b",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
-  "start_url": "./",
+  "start_url": "/?utm_source=pwa",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",

@@ -7,22 +7,17 @@ import { SwUpdate } from '@angular/service-worker';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-initialization';
   update: boolean = false;
 
   constructor(
     private updates: SwUpdate,
   ) {
     updates.available.subscribe(update => {
-      console.log(update);
-
       this.update = true;
-
-
     });
   }
 
-  reloadPage(): void {
+  activateUpdate(): void {
     this.updates.activateUpdate().then(() => document.location.reload());
   }
 }

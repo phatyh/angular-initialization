@@ -1,5 +1,9 @@
 <router-outlet></router-outlet>
 
 <ng-container *ngIf="update">
-  <p>Güncelleme var. <button (click)="reloadPage()">Yükle</button></p>
+    <div class="fixed-bottom">
+        <ngb-alert type="info" [dismissible]="false" class="mb-0">
+            Güncelleme var. <button (click)="activateUpdate()"><strong>Yükle</strong></button>
+        </ngb-alert>
+    </div>
 </ng-container>

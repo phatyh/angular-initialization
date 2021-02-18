@@ -16,12 +16,11 @@
             <label class="custom-control-label" for="customSwitch">Remember</label>
         </div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <button type="submit" class="btn btn-primary">Login</button>
 
-<div class="container mt-5">
-    <div class="list-group">
-        <a [routerLink]="['/', 'auth', 'register']" class="list-group-item list-group-item-action">Register</a>
-        <a [routerLink]="['/', 'auth', 'reset']" class="list-group-item list-group-item-action">Reset Password</a>
+    <div class="mt-5">
+        <a [routerLink]="['/']" class="btn btn-primary mr-1">Home</a>
+        <a [routerLink]="['/', 'auth', 'register']" class="btn btn-primary mr-1">Register</a>
+        <a [routerLink]="['/', 'auth', 'reset']" class="btn btn-primary mr-1">Reset Password</a>
     </div>
-</div>
+</form>
