@@ -29,10 +29,12 @@
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Register</button>
+    <p class="mt-1 text-muted"><small>By creating an account, you agree to the Terms of Service. For more information about privacy practices, see the Privacy Statement. We'll occasionally send you account-related emails.</small></p>
+
+    <hr>
 
     <div class="mt-5">
         <a [routerLink]="['/']" class="btn btn-primary mr-1">Home</a>
         <a [routerLink]="['/', 'auth', 'login']" class="btn btn-primary mr-1">Login</a>
-        <a [routerLink]="['/', 'auth', 'reset']" class="btn btn-primary mr-1">Reset Password</a>
     </div>
 </form>
