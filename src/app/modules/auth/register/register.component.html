@@ -35,6 +35,6 @@
 
     <div class="mt-5">
         <a [routerLink]="['/']" class="btn btn-primary mr-1">Home</a>
-        <a [routerLink]="['/', 'auth', 'login']" class="btn btn-primary mr-1">Login</a>
+        <a [routerLink]="['/', 'auth', 'login']" queryParamsHandling="preserve" class="btn btn-primary mr-1">Login</a>
     </div>
 </form>
